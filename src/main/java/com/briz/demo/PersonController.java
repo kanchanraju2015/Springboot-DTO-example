@@ -48,4 +48,9 @@ public Person3 byid(@PathVariable int id) // results are unique always
 {
 	return prepo.getDetailsById(id);
 }
+@RequestMapping("/del/{id}")
+public void del(@PathVariable int id)
+{
+	prepo.deleteById(id);
+}
 }
