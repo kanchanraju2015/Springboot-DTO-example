@@ -15,4 +15,5 @@ Person2 getByName(String name);
 
 @Query("select new com.briz.demo.Person3(p.id,p.name,p.age,p.city) from person p where p.id=?1")
 Person3 getDetailsById(int id);
+List<Person> findByAge(int age);
 }
